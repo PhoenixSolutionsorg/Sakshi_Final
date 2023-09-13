@@ -1,5 +1,5 @@
 import publicRoutes from './public.route';
-// import privateRoutes from './private.route';
+import privateRoutes from './private.route';
 import { Outlet } from "react-router-dom";
 // import PrivateLayout from "../../layout/private";
 
@@ -9,9 +9,9 @@ export const UserRoutes = ()=>{
             element : <Outlet/>,
             children : [...publicRoutes()]
         },
-        // {
-        //     element : <PrivateLayout/>,
-        //     children : [...privateRoutes()]
-        // },
+        {
+            element : <Outlet/>,
+            children : [...privateRoutes()]
+        },
     ];
 };

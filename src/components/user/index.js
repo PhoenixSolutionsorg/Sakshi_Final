@@ -1,6 +1,6 @@
-export {default as cart} from './cart/cart';
+export {default as Cart} from './cart/cart';
 export {default as countdown} from './coundown/coundown';
-export {default as contact} from './contact/contact';
+export {default as Contact} from './contact/contact';
 // export {default as deleteAfterComplete} from './deleteAfterComplete';
 export {default as footer} from './footer/footer';
 export {default as header} from './header/header';
