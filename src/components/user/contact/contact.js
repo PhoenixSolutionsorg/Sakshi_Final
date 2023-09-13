@@ -1,9 +1,6 @@
-import Footer from "../footer/footer";
-import WithoutCategory from "../header/withoutCategory";
 
 function Contact() {
   return <>
-  <WithoutCategory/>
     <section id="contact-us" className="contact-us section">
       <div className="container">
         <div className="contact-head">
@@ -114,10 +111,6 @@ function Contact() {
     </section>
     {/*/ End Contact */}
     {/* Map Section */}
-    <div className="map-section">
-      <div id="myMap" />
-    </div>
-    <Footer/>
   </>
 }
 export default Contact;

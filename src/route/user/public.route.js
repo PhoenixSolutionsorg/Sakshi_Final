@@ -2,6 +2,7 @@ import homeRoutes from "./home";
 import authRoutes from "./auth";
 import accountRoutes from './account';
 import productRoutes from './product';
+import contactRoute from './contact';
 
 export default function route(){
     return [
@@ -9,6 +10,7 @@ export default function route(){
         ...authRoutes(),
         ...accountRoutes(),
         ...productRoutes(),
-        
+        ...contactRoute(),
+                
     ]
 }

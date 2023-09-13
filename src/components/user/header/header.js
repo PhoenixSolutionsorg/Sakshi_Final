@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import routesMap from "../../../routeControl/userRouteMap";
 function Header(){
     return <>
     <header className="header shop">
@@ -31,11 +32,11 @@ function Header(){
                 <i className="ti-alarm-clock" /> <a href="#">Daily deal</a>
               </li>
               <li>
-                <i className="ti-user" /> <Link to={"/myAccount"}>My account</Link>
+                <i className="ti-user" /> <Link to={routesMap?.PROFILE}>My account</Link>
               </li>
               <li>
                 <i className="ti-power-off" />
-                <a href="login.html#">Login</a>
+                <Link to={routesMap?.SIGNIN}>Login</Link>
               </li>
             </ul>
           </div>
