@@ -1,12 +1,11 @@
 import APIrequest from "../../axios";
-import  {Account } from "../../../apiEndPoints/index";
+import  {Category } from "../../../apiEndPoints/index";
 
-export const AccountServices = {
-    userSignIn : async (bodyData)=>{
+export const CategoryServices = {
+    getAllCategories : async ()=>{
         try{
             const payload = {
-                ...Account.signIn,
-                bodyData
+                ...Category.getAllCategories,
             }
             const response = APIrequest(payload);
             return response;

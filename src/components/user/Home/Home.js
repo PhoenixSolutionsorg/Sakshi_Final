@@ -12,22 +12,23 @@ import ShopHome from "../shopHome/shopHome"
 import ShopServices from "../shopService/shopServies"
 import SmallSlider from "../smallSlider/smallSlider"
 import TopBar from "../topbar/topBar"
-export  default function Home(){
-    return<>
-        {/* <Loader/> */}
-        {/* <Header/> */}
-        <TopBar/>   
-        <WithoutCategory/>
-        <HeroSlider/>
-        <SmallSlider/>
-        <Product/>
-        <MiddleBanner/>
-        <ProductArea/>
-        <ShopHome/>
-        <Coundown/>
-        <ShopBlog/>
-        <ShopServices/>
-        <Footer/>
+export default function Home(props) {
+    const { categories } = props;
+    return <>
+        <TopBar />
+        <WithoutCategory
+            categories={categories}
+        />
+        <HeroSlider />
+        <SmallSlider />
+        <Product />
+        <MiddleBanner />
+        <ProductArea />
+        <ShopHome />
+        <Coundown />
+        <ShopBlog />
+        <ShopServices />
+        <Footer />
 
     </>
 }

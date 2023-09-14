@@ -38,7 +38,6 @@ function MiddleBanner() {
                 </div>
             </div>
         </section>
-
     </>
 }
 export default MiddleBanner;

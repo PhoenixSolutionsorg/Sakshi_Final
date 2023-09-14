@@ -12,7 +12,6 @@ function SignIn() {
   const navigate = useNavigate();
   const signIn = async (formData) => {
     try {
-      console.log(formData);
       const response = await AccountServices.userSignIn(formData);
       if (response?.success) {
         dispatch(setUserData(response?.data));

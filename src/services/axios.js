@@ -2,7 +2,6 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 const APIrequest = async ({ method, url, baseURL, queryParams, bodyData, }) => {
   try {
-    console.log("3333");
     // const token = useSelector(state => state?.user?.userData?.token);
     const axiosConfig = {
       method: method || "GET",
