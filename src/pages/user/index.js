@@ -6,5 +6,6 @@ export const Profile = React.lazy(()=>import('./profile'));
 export const Product = React.lazy(()=>import('./product'));
 export const Cart = React.lazy(()=>import('./cart'));
 export const Contact = React.lazy(()=>import('./contact'));
+export const ProductDescription = React.lazy(()=>import('./description'));
 
 

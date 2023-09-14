@@ -7,6 +7,10 @@ const Account = {
         url : '/signUp',
         method : 'POST'
     },
+    signOut : {
+        url : '/signOut',
+        method : 'POST'
+    },
     viewAccount : (id)=> ({
         url : `/myAccount/${id}`,
         method : 'GET'
