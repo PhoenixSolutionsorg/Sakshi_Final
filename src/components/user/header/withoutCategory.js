@@ -1,31 +1,33 @@
 import { Link } from "react-router-dom";
 import routesMap from "../../../routeControl/userRouteMap";
+import { useDispatch, useSelector } from "react-redux";
+import { Logout } from "@mui/icons-material";
+import { setUserData } from "../../../redux/user";
 
-export default function WithoutCategory({categories}) {
+export default function WithoutCategory({ categories }) {
+  const dispatch = useDispatch();
+  const userData = useSelector((state) => state?.user?.userData);
+  const logOut = ()=>{
+    dispatch(setUserData({}));
+  }
+
   return <>
     <header className="header shop">
-      {/* Topbar */}
-
-      {/* End Topbar */}
       <div className="middle-inner">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-3 col-12">
-              {/* Logo */}
               <div className="logo">
-               <Link to={routesMap?.HOME?.path}>
-               <h3>Jewel Carnival</h3>
-               </Link>
+                <Link to={routesMap?.HOME?.path}>
+                  <h3>Jewel Carnival</h3>
+                </Link>
               </div>
-              {/*/ End Logo */}
-              {/* Search Form */}
               <div className="search-top">
                 <div className="top-search">
                   <a href="#0">
                     <i className="ti-search" />
                   </a>
                 </div>
-                {/* Search Form */}
                 <div className="search-top">
                   <form className="search-form">
                     <input type="text" placeholder="Search here..." name="search" />
@@ -34,20 +36,12 @@ export default function WithoutCategory({categories}) {
                     </button>
                   </form>
                 </div>
-                {/*/ End Search Form */}
               </div>
-              {/*/ End Search Form */}
               <div className="mobile-nav" />
             </div>
             <div className="col-lg-7 col-md-6 col-12">
               <div className="search-bar-top">
                 <div className="search-bar">
-                  {/* <select>
-                <option selected="selected">All Category</option>
-                <option>watch</option>
-                <option>mobile</option>
-                <option>kid’s item</option>
-              </select> */}
                   <form>
                     <input
                       name="search"
@@ -63,22 +57,21 @@ export default function WithoutCategory({categories}) {
             </div>
             <div className="col-lg-2 col-md-3 col-12">
               <div className="right-bar">
-                {/* Search Form */}
                 <div className="sinlge-bar">
                   <Link to={routesMap?.WISHLIST?.path} className="single-icon">
                     <i className="fa fa-heart-o" aria-hidden="true" />
                   </Link>
                 </div>
-                <div className="sinlge-bar">
-                  <Link to={routesMap?.PROFILE?.path} className="single-icon">
-                    <i className="fa fa-user-circle-o" aria-hidden="true" />
-                  </Link>
-                </div>
+                {userData?.email &&
+                  <div className="sinlge-bar">
+                    <Link to={routesMap?.PROFILE?.path} className="single-icon">
+                      <i className="fa fa-user-circle-o" aria-hidden="true" />
+                    </Link>
+                  </div>}
                 <div className="sinlge-bar shopping">
                   <Link to={routesMap?.CART.path} className="single-icon">
                     <i className="ti-bag" /> <span className="total-count">2</span>
                   </Link>
-                  {/* Shopping Item */}
                   <div className="shopping-item">
                     <div className="dropdown-cart-header">
                       <span>2 Items</span>
@@ -144,12 +137,13 @@ export default function WithoutCategory({categories}) {
                     CATEGORIES
                   </h3>
                   <ul className="main-category hide">
-                    {categories?.map((category,idx)=>{
-                      <li key={idx}>
-                      <a href="#">{category} </a>
-                    </li>
+                    {categories?.map((item, idx) => {
+                      <li>
+                        <a href="#">denim </a>
+                      </li>
                     })}
                   </ul>
+
                 </div>
               </div>
               <div className="col-lg-9 col-12">
@@ -164,22 +158,19 @@ export default function WithoutCategory({categories}) {
                             {/* <a>Home</a> */}
                           </li>
                           <li>
-                            <Link to={routesMap?.PRODUCTS?.path}>Product</Link>
+                            <Link to={routesMap?.PRODUCTS?.path}>Shop</Link>
                             {/* <a>Product</a> */}
                           </li>
                           {/* <li>
                         <a href="#">Service</a>
                       </li> */}
-                          <li>
+                          {/* <li>
                             <a href="#">
                               Shop
                               <i className="ti-angle-down" />
                               <span className="new">New</span>
                             </a>
                             <ul className="dropdown">
-                              {/* <li>
-                            <a href="shop-grid.html">Shop Grid</a>
-                          </li> */}
                               <li>
                                 <Link to={routesMap?.CART?.path}>Cart</Link>
                               </li>
@@ -187,7 +178,7 @@ export default function WithoutCategory({categories}) {
                                 <a href="checkout.html">Checkout</a>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                           <li>
                             <a href="#">Pages</a>
                           </li>
@@ -207,18 +198,27 @@ export default function WithoutCategory({categories}) {
                           <li>
                             <Link to={"/contact"}> Contact Us</Link>
                           </li>
+                          {userData?.email &&
+                          <li>
+                          <Link
+                            onClick={(e) => {
+                              e.preventDefault();
+                              Logout();
+                            }}
+                          >
+                            Log Out
+                          </Link>
+                        </li>}
                         </ul>
                       </div>
                     </div>
                   </nav>
-                  {/*/ End Main Menu */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/*/ End Header Inner */}
     </header>
 
   </>

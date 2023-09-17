@@ -21,3 +21,4 @@ export {default as TrendingProducts} from './trendingProducts/trendingProducts';
 export {default as UserHomePage} from './Home/Home';
 export {default as WithoutCategory} from './header/withoutCategory';
 export {default as Footer} from './footer/footer';
+export {default as Navbar} from './navbar/index';

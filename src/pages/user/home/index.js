@@ -4,19 +4,18 @@ import { UserHomePage } from "../../../components";
 import { CategoryServices } from "../../../services";
 
 function Home(props) {
-  const [categories,setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
   toast.success(props?.state?.data);
-  useEffect( async()=>{
+  useEffect(async () => {
     const response = await CategoryServices.getAllCategories();
-    if(response?.success){
-      console.log(response);
-      setCategories(response?.data);
+    if (response?.success) {
+      // setCategories(response?.data);
     }
-  },[])
+  }, [])
   return (
     <>
       <UserHomePage
-        categories = {categories}
+        categories={categories}
       />
     </>
   );

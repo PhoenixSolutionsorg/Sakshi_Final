@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import routesMap from "../../../routeControl/userRouteMap";
+import { useDispatch, useSelector } from "react-redux";
+import { setUserData } from "../../../redux/user";
 
 export default function TopBar() {
+  const dispatch = useDispatch();
+  const userData = useSelector((state) => state?.user?.userData);
+
+  const logOut = ()=>{
+    dispatch(setUserData({}));
+    alert('Log Out Success')
+  }
+
   return <>
     <header className="header shop">
       <div className="topbar">
@@ -36,7 +46,16 @@ export default function TopBar() {
                   </li>
                   <li>
                     <i className="ti-power-off" />
-                    <Link to={routesMap?.SIGNIN?.path}>Login</Link>
+                    {userData?.email ?
+                      <Link
+                        onClick={(e) => {
+                          e.preventDefault();
+                          logOut();
+                        }}
+                      >
+                        Log Out
+                      </Link> :
+                      <Link to={routesMap?.SIGNIN?.path}>Login</Link>}
                   </li>
                 </ul>
               </div>
