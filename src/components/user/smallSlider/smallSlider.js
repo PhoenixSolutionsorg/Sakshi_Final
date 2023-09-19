@@ -8,9 +8,9 @@ function SmallSlider(){
         <div className="single-banner">
           <img src="./images/6.jfif" alt="#" />
           <div className="content">
-            {/* <p>Man's Collectons</p>
-							<h3>Summer travel <br> collection</h3>
-							<a href="#">Discover Now</a> */}
+            <p>Man's Collectons</p>
+							<h3 className="text-white">Summer travel <br/> collection</h3>
+							<a href="#">Discover Now</a>
           </div>
         </div>
       </div>
@@ -18,13 +18,13 @@ function SmallSlider(){
       {/* Single Banner  */}
       <div className="col-lg-4 col-md-6 col-12">
         <div className="single-banner">
-          <img src="images/10.jfif" alt="#" />
+          <img src="images/18.jfif" alt="#" />
           <div className="content">
-            <p>Bag Collectons</p>
-            <h3>
+            <p >Bag Collectons</p>
+            <h3 className="text-white">
               Awesome Bag <br /> 2020
             </h3>
-            <a href="#">Shop Now</a>
+            <a href="#" className="text-white">Shop Now</a>
           </div>
         </div>
       </div>
@@ -32,13 +32,13 @@ function SmallSlider(){
       {/* Single Banner  */}
       <div className="col-lg-4 col-12">
         <div className="single-banner tab-height">
-          <img src="images/7.jfif" alt="#" />
+          <img src="./images/7.jfif" alt="#" />
           <div className="content">
             <p>Flash Sale</p>
-            <h3>
+            <h3 className="text-white">
               Mid Season <br /> Up to <span>40%</span> Off
             </h3>
-            <a href="#">Discover Now</a>
+            <a href="#" className="text-white">Discover Now</a>
           </div>
         </div>
       </div>

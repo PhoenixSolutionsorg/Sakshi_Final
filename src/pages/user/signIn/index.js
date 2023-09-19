@@ -25,12 +25,29 @@ function SignIn() {
 
     }
   }
+  const signUp = async (formData) => {
+    try {
+      console.log('Form Data : ',formData);
+      const response = await AccountServices.userSignUp(formData);
+      if (response?.success) {
+        dispatch(setUserData(response?.data));
+        messageNotification({
+          type: "success",
+          message: response?.message
+        });
+        navigate(routesMap.HOME.path)
+      }
+    } catch (error) {
+
+    }
+  }
 
   return (
     <>
       <WithoutCategory />
       <UserAuth
         signIn={signIn}
+        signUp={signUp}
       />
       <Footer />
     </>

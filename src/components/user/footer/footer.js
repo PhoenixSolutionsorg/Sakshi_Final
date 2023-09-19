@@ -3,7 +3,7 @@ function Footer() {
     <footer className="footer">
       {/* Footer Top */}
       <div className="footer-top section">
-        <div className="container">
+        <div className="container pl-5 pt-0 pb-0 pr-5 ">
           <div className="row">
             <div className="col-lg-5 col-md-6 col-12">
               {/* Single Widget */}

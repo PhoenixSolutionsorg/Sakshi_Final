@@ -13,5 +13,17 @@ export const AccountServices = {
         }catch(error){
             throw error;
         }
+    },
+    userSignUp : async (bodyData)=>{
+        try{
+            const payload = {
+                ...Account.signUp,
+                bodyData
+            }
+            const response = APIrequest(payload);
+            return response;
+        }catch(error){
+            throw error;
+        }
     }
 }

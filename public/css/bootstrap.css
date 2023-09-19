@@ -2506,7 +2506,7 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #1e7e34;
     border-color: #1c7430;
-    box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
+    box-shadow: 0 0 0 .2rem #999
 }
 
 .btn-info {

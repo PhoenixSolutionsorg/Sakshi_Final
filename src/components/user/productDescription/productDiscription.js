@@ -1,4 +1,5 @@
 import "./productDescription.css";
+import "./script.js"
 export default function ProductDescription() {
     return <>
 
@@ -10,20 +11,22 @@ export default function ProductDescription() {
                             Product Detail Design Using Bootstrap 4.0
                         </div>
                         <div className="row m-0">
-                            <div className="col-lg-4 left-side-product-box pb-3">
-                                <img src="http://nicesnippets.com/demo/pd-image1.jpg" className="p-3" />
+                            <div className="col-lg-4 left-side-product-box pb-3 ">
+                                <div id="zoom">
+                                <img  src="./images/image.jfif" className="p-3" id="image"  />
+                                </div>
                                 <span className="sub-img">
                                     <img
                                         src="http://nicesnippets.com/demo/pd-image2.jpg"
-                                        className="p-2"
+                                        className="p-2 border"
                                     />
                                     <img
                                         src="http://nicesnippets.com/demo/pd-image3.jpg"
-                                        className="p-2"
+                                        className="p-2 border"
                                     />
                                     <img
                                         src="http://nicesnippets.com/demo/pd-image4.jpg"
-                                        className="p-2"
+                                        className="p-2 border"
                                     />
                                 </span>
                             </div>
@@ -61,12 +64,12 @@ export default function ProductDescription() {
                                         <div className="col-lg-12 mt-3">
                                             <div className="row">
                                                 <div className="col-lg-6 pb-2">
-                                                    <a href="#" className="btn btn-danger w-100">
+                                                    <a href="#" className="btn r w-100 addbtn text-white" >
                                                         Add To Cart
                                                     </a>
                                                 </div>
                                                 <div className="col-lg-6">
-                                                    <a href="#" className="btn btn-success w-100">
+                                                    <a href="#" className="btn shopbtn w-100 text-white">
                                                         Shop Now
                                                     </a>
                                                 </div>

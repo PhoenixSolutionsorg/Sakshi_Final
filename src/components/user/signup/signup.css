@@ -11,11 +11,14 @@
     width: 100%;
     margin: auto;
     margin-left: 100px;
-    max-width: 525px;
-    min-height: 670px;
+    max-width: 805px;
+    min-height: 850px;
     position: relative;
     /* background: url(../../../public/images/bannerLogin.jpg) no-repeat center; */
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+.block1{
+    height: 100px;
 }
 
 .login-snip {
@@ -74,13 +77,14 @@
 }
 
 .login-space .group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .login-space .group .label,
 .login-space .group .input,
 .login-space .group .button {
     width: 100%;
+    padding: 10px;
     /* color: #fff; */
     display: block;
 }
@@ -91,7 +95,7 @@
 .login-space .group .input,
 .login-space .group .button {
     /* border: none; */
-    padding: 15px 20px;
+    padding: 5px 15px;
     border-radius: 25px;
     background: rgba(255, 255, 255, .1);
 }
@@ -190,7 +194,7 @@ a {
 
 .hr {
     height: 2px;
-    margin: 60px 0 50px 0;
+    margin: 30px 0 20px 0;
     background: rgba(255, 255, 255, .2);
 }
 
@@ -199,7 +203,7 @@ a {
 }
 
 .card1 {
-    width: 500px;
+    width: 770px;
     left: 200px !important;
 }
 

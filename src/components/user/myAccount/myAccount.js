@@ -1,7 +1,9 @@
+import { useSelector } from "react-redux";
 import Footer from "../footer/footer";
 import "./account.css";
 
 export default function MyAccount() {
+  const userData = useSelector((state)=>state?.user?.userData);
   return <>
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -26,11 +28,11 @@ export default function MyAccount() {
           </div>
           <div className="col-md-6">
             <div className="profile-head">
-              <h5>Kshiti Ghelani</h5>
-              <h6>Web Developer and Designer</h6>
+              <h6>{`${userData?.first_name} ${userData?.last_name}` }</h6>
+              {/* <h6>Web Developer and Designer</h6>
               <p className="proile-rating">
                 RANKINGS : <span>8/10</span>
-              </p>
+              </p> */}
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item">
                   <a
@@ -55,16 +57,16 @@ export default function MyAccount() {
                     aria-controls="profile"
                     aria-selected="false"
                   >
-                    Timeline
+                    Orders
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 col-sm-12 ">
             <input
               type="submit"
-              className="profile-edit-btn"
+              className="profile-edit-btn text-white "
               name="btnAddMore"
               defaultValue="Edit Profile"
             />
@@ -72,7 +74,7 @@ export default function MyAccount() {
         </div>
         <div className="row">
           <div className="col-md-4">
-            <div className="profile-work">
+            {/* <div className="profile-work">
               <p>WORK LINK</p>
               <a href="">Website Link</a>
               <br />
@@ -90,7 +92,7 @@ export default function MyAccount() {
               <br />
               <a href="">PHP, .Net</a>
               <br />
-            </div>
+            </div> */}
           </div>
           <div className="col-md-8">
             <div className="tab-content profile-tab" id="myTabContent">
@@ -102,18 +104,10 @@ export default function MyAccount() {
               >
                 <div className="row">
                   <div className="col-md-6">
-                    <label>User Id</label>
-                  </div>
-                  <div className="col-md-6">
-                    <p>Kshiti123</p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6">
                     <label>Name</label>
                   </div>
                   <div className="col-md-6">
-                    <p>Kshiti Ghelani</p>
+                    <p>{`${userData?.first_name} ${userData?.last_name}`}</p>
                   </div>
                 </div>
                 <div className="row">
@@ -121,7 +115,7 @@ export default function MyAccount() {
                     <label>Email</label>
                   </div>
                   <div className="col-md-6">
-                    <p>kshitighelani@gmail.com</p>
+                    <p>{`${userData?.email}`}</p>
                   </div>
                 </div>
                 <div className="row">
@@ -129,15 +123,23 @@ export default function MyAccount() {
                     <label>Phone</label>
                   </div>
                   <div className="col-md-6">
-                    <p>123 456 7890</p>
+                    <p>{`${userData?.contact}`}</p>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-md-6">
-                    <label>Profession</label>
+                    <label>Date of Birth</label>
                   </div>
                   <div className="col-md-6">
-                    <p>Web Developer and Designer</p>
+                    <p>{userData?.date_of_birth}</p>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6">
+                    <label>Date of Anniversary</label>
+                  </div>
+                  <div className="col-md-6">
+                    <p>{userData?.date_of_anniversry}</p>
                   </div>
                 </div>
               </div>
@@ -200,7 +202,7 @@ export default function MyAccount() {
         </div>
       </form>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </>
 
 }

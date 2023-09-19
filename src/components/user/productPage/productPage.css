@@ -117,7 +117,7 @@ select {
 }
 
 #filterbar input[type='radio']:checked {
-    background-color: #16c79a;
+    background-color: gray;
     border: none
 }
 
@@ -135,7 +135,7 @@ select {
 
 #filterbar .btn-success:not(:disabled):not(.disabled).active,
 #filterbar .btn-success:not(:disabled):not(.disabled):active {
-    background-color: #16c79a;
+    background-color: #F7941D;
     color: #fff
 }
 
@@ -266,7 +266,7 @@ label {
 
 #size .btn-success:not(:disabled):not(.disabled).active,
 #size .btn-success:not(:disabled):not(.disabled):active {
-    background-color: #16c79a;
+    background-color: gray;
     color: #fff
 }
 
@@ -374,7 +374,7 @@ a {
 
 #avail-size .btn-success:not(:disabled):not(.disabled).active,
 #avail-size .btn-success:not(:disabled):not(.disabled):active {
-    background-color: #16c79a;
+    background-color: gray;
     color: #fff
 }
 
@@ -563,6 +563,9 @@ input[type=range]::-webkit-slider-thumb {
     #filterbar {
         width: 50%
     }
+    .hidebox {
+        display: none;
+    }
 }
 
 @media(max-width: 525.5px) {
@@ -580,10 +583,16 @@ input[type=range]::-webkit-slider-thumb {
     .col-md-6 {
         padding-left: 0
     }
+    .hidebox {
+        display: none;
+    }
 }
 
 @media(max-width: 500.5px) {
     .pagination {
         display: none
+    }
+    .hidebox {
+        display: none;
     }
 }
