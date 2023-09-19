@@ -1,6 +1,10 @@
 import { Field, Form, Formik } from "formik";
 import "./signup.css";
+import FileUpload from "../file-upload";
+import { useState } from "react";
 export default function Signup({ signIn, signUp }) {
+	const [imageUrl, setImageUrl] = useState();
+
 	return <>
 		<div className='bg'>
 			<div className="row mt-3 mb-3">
@@ -58,7 +62,7 @@ export default function Signup({ signIn, signUp }) {
 									</Formik>
 
 									<Formik
-										initialValues={{ first_name: '',last_name : '', password: '', confirmPassword: '', email: '',date_of_birth : '',date_of_anniversry : ''}}
+										initialValues={{ first_name: '', last_name: '', password: '', confirmPassword: '', email: '', date_of_birth: '', date_of_anniversry: '' }}
 										enableReinitialize
 										onSubmit={signUp}
 									>
@@ -86,10 +90,15 @@ export default function Signup({ signIn, signUp }) {
 												</div>
 												{/* ------------------------------------------------ */}
 												<div className="w-100 block1">
-													{/* <div className="group col-md-6 float-left">
+													<div className="group col-md-6 float-left">
 														<label htmlFor="pass" className="label">Profile Picture</label>
-														<Field id="pass2" type="file" name="profile" accect="./jpeg" className="input" placeholder="Enter your email address" />
-													</div> */}
+														<FileUpload
+															mediaFor={'product'}
+															mediaType={'images'}
+															imageUrl={imageUrl}
+															setImageUrl={setImageUrl}
+														/>
+													</div>
 													<div className="group col-md-6 float-left ">
 														<label htmlFor="pass" className="label">Date Of Anniversary</label>
 														<Field id="pass2" type="date" name="date_of_anniversry" className="input" placeholder="Select your Date Of Birth" />
