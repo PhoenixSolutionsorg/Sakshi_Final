@@ -16,7 +16,7 @@ export default function WithoutCategory({ categories }) {
       <div className="middle-inner">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-3 col-12">
+            <div className="col-lg-3 col-md-3 col-12 col-sm-12">
               <div className="logo">
                 <Link to={routesMap?.HOME?.path}>
                   <h3>Jewel Carnival</h3>
@@ -39,7 +39,7 @@ export default function WithoutCategory({ categories }) {
               </div>
               <div className="mobile-nav" />
             </div>
-            <div className="col-lg-7 col-md-6 col-12">
+            <div className="col-lg-7 col-md-6 col-12 col-sm-12">
               <div className="search-bar-top">
                 <div className="search-bar">
                   <form>
@@ -55,7 +55,7 @@ export default function WithoutCategory({ categories }) {
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-md-3 col-12">
+            <div className="col-lg-2 col-md-3 col-12 col-sm-12">
               <div className="right-bar">
                 <div className="sinlge-bar">
                   <Link to={routesMap?.WISHLIST?.path} className="single-icon">
@@ -146,7 +146,7 @@ export default function WithoutCategory({ categories }) {
 
                 </div>
               </div>
-              <div className="col-lg-9 col-12">
+              <div className="col-lg-9 col-12 col-md-12 col-sm-12">
                 <div className="menu-area">
                   {/* Main Menu */}
                   <nav className="navbar navbar-expand-lg">

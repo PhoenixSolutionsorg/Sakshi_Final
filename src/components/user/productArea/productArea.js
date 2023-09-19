@@ -37,7 +37,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/ipad.jpg"
+                          src="./images/j1.jfif"
                           className="img-fluid"
                           alt=""
                         />
@@ -79,7 +79,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/headphone.jpg"
+                          src="./images/j2.jfif"
                           className="img-fluid"
                           alt="Headphone"
                         />
@@ -121,7 +121,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/macbook-air.jpg"
+                          src="./images/j3.jfif"
                           className="img-fluid"
                           alt="Macbook"
                         />
@@ -163,7 +163,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/nikon.jpg"
+                          src="./images/j4.jfif"
                           className="img-fluid"
                           alt="Nikon"
                         />
@@ -209,7 +209,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/play-station.jpg"
+                          src="./images/j5.jfif"
                           className="img-fluid"
                           alt="Play Station"
                         />
@@ -251,7 +251,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/macbook-pro.jpg"
+                          src="./images/j6.jfif"
                           className="img-fluid"
                           alt="Macbook"
                         />
@@ -293,7 +293,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/speaker.jpg"
+                          src="./images/j7.jfif"
                           className="img-fluid"
                           alt="Speaker"
                         />
@@ -335,7 +335,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/galaxy.jpg"
+                          src="./images/j8.jfif"
                           className="img-fluid"
                           alt="Galaxy"
                         />
@@ -381,7 +381,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/iphone.jpg"
+                          src="./images/j9.jfif"
                           className="img-fluid"
                           alt="iPhone"
                         />
@@ -423,7 +423,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/canon.jpg"
+                          src="./images/j10.jfif"
                           className="img-fluid"
                           alt="Canon"
                         />
@@ -465,7 +465,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/pixel.jpg"
+                          src="./images/j1.jfif"
                           className="img-fluid"
                           alt="Pixel"
                         />
@@ -507,7 +507,7 @@ function ProductArea() {
                       </span>
                       <div className="img-box">
                         <img
-                          src="/examples/images/products/watch.jpg"
+                          src="./images/j11.jfif"
                           className="img-fluid"
                           alt="Watch"
                         />

@@ -19,10 +19,10 @@ function MiddleBanner() {
                     </div>
                     {/* /End Single Banner  */}
                     {/* Single Banner  */}
-                    <div className="col-lg-6 col-md-6 col-12">
+                    <div className="col-lg-6 col-md-6 col-12" >
                         <div className="single-banner">
                             {/* <img src="https://via.placeholder.com/600x370" alt="#"> */}
-                            <img src="images/5.jfif" alt="#" />
+                            <img src="images/5.jfif" alt="#" className="w-100 h-100 img img-responsive cover" />
                             <div className="content">
                                 <p>jweles women</p>
                                 <h3>
