@@ -17,8 +17,9 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="./images/s1.jpg" alt="" />
+                <img src="./images/5.jfif"  alt="" className="saleimg" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
+                
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
                 </a>
@@ -40,7 +41,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s2.jpg" alt="" />
+                <img src="./images/1.jfif" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -63,7 +64,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="16.jpg" alt="" />
+                <img src="./images/16.jpg" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -95,7 +96,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s3.jpg" alt="" />
+                <img src="images/17.jpg" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -118,7 +119,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s4.jpg" alt="" />
+                <img src="images/18.jfif" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -141,7 +142,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s3.jpg" alt="" />
+                <img src="images/15.jpg" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -173,7 +174,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s2.jpg" alt="" />
+                <img src="images/7.jfif" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -196,7 +197,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s1.jpg" alt="" />
+                <img src="images/12.jpg" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />
@@ -219,7 +220,7 @@ function ShopHome(){
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="list-image overlay">
-                <img src="images/s4.jpg" alt="" />
+                <img src="images/13.jfif" alt="" />
                 {/* <img src="https://via.placeholder.com/115x140" alt="#"> */}
                 <a href="#" className="buy">
                   <i className="fa fa-shopping-bag" />

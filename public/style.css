@@ -3419,6 +3419,38 @@ Version:1.0
     position: relative;
 }
 
+.list-image img {
+    width: 180px;
+    height: 100px;
+}
+
+.saleimg {
+    width: 150px;
+    height: 150px;
+}
+
+.adjest {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.adjest .btn {
+    background-color: #F7941D;
+}
+
+.adjest .btn1 {
+    background-color: #333;
+}
+
+.adjest .btn1:hover {
+    background: #F7941D;
+}
+
+.single-banner {
+    /* background-size: cover; */
+    height: 300px;
+}
+
 .shop-home-list .single-list .list-image.overlay:before {
     background: #000;
     opacity: 0;
@@ -3471,10 +3503,11 @@ Version:1.0
     padding-right: 0px;
 }
 
-.shop-home-list .single-list img {
+
+/* .shop-home-list .single-list img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .shop-home-list .single-list .content {
     padding-top: 45px;

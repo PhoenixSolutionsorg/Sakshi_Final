@@ -17,6 +17,9 @@
 
 .left-side-product-box img {
     width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 5px gray;
+    overflow: hidden;
 }
 
 .left-side-product-box .sub-img img {
@@ -52,4 +55,12 @@
     .pro-box-section .pro-box img {
         height: auto;
     }
+}
+
+.addbtn {
+    background-color: #F7941D;
+}
+
+.shopbtn {
+    background-color: #333;
 }

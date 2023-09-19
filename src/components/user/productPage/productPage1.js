@@ -42,7 +42,7 @@ function ProductPage() {
             
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="collapse navbar-collapse" id="mynav">
+          {/* <div className="collapse navbar-collapse hidebox" id="mynav" >
             
             <ul className="navbar-nav d-lg-flex align-items-lg-center">
               
@@ -76,7 +76,7 @@ function ProductPage() {
               </li>
               <li className="nav-item d-lg-none d-inline-flex"> </li>
             </ul>
-          </div>
+          </div> */}
         </nav>
         <div className="ml-auto  mr-2 ">
           
@@ -442,409 +442,159 @@ function ProductPage() {
                       
                       <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center price">
-                      <button className="btn btn-primary mr-2">Add To Cart</button>
-                      <button className="btn btn-primary ml-2">Description</button>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 pt-md-0 pt-3">
+            <div className="col-lg-4 col-md-6 ">
               
               <Link to={routesMap?.DESCRIPTION?.path}>
                 <div className="card d-flex flex-column align-items-center">
                   
-                  <div className="product-name">Nike Tshirts for Men</div>
+                  <div className="product-name">Torn Jeans for Men</div>
                   <div className="card-img">
                     
                     <img
-                      src="https://www.freepnglogos.com/uploads/t-shirt-png/t-shirt-png-printed-shirts-south-africa-20.png"
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
                       alt=""
-                      height={100}
-                      id="shirt"
                     />
                   </div>
-                  <div className="text-muted text-center mt-auto">
-                    Available Sizes
-                  </div>
-                  <div id="avail-size">
-                    
-                    <div
-                      className="btn-group d-flex align-items-center flex-wrap"
-                      data-toggle="buttons"
-                    >
-                      
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input className="form-check-input" type="checkbox" /> 80
-                      </label>
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          defaultChecked=""
-                        />
-                        92
-                      </label>
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          defaultChecked=""
-                        />
-                        102
-                      </label>
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          defaultChecked=""
-                        />
-                        104
-                      </label>
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          defaultChecked=""
-                        />
-                        106
-                      </label>
-                      <label className="btn btn-success form-check-label">
-                        
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          defaultChecked=""
-                        />
-                        108
-                      </label>
-                    </div>
-                  </div>
-                  <div className="card-body pt-0">
+                  <div className="card-body w-100 ">
                     
                     <div className="text-muted text-center mt-auto">
                       Available Colors
                     </div>
                     <div className="d-flex align-items-center justify-content-center colors my-2">
                       
-                      <div
-                        className="btn-group"
-                        data-toggle="buttons"
-                        data-tooltip="tooltip"
-                        data-placement="right"
-                        title="choose color"
-                      >
-                        
-                        <label className="btn btn-light border form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-blue form-check-label active">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-green form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-orange form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-pink form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                      </div>
+                      <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center price">
-                      
-                      <div className="del mr-2">
-                        <span className="text-dark">5500 uah</span>
-                      </div>
-                      <div className="font-weight-bold">4500 uah</div>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 pt-lg-0 pt-md-4 pt-3">
+            <div className="col-lg-4 col-md-6 ">
               
               <Link to={routesMap?.DESCRIPTION?.path}>
                 <div className="card d-flex flex-column align-items-center">
                   
-                  <div className="product-name text-center">
-                    Casual Dress Belts For Men
-                  </div>
+                  <div className="product-name">Torn Jeans for Men</div>
                   <div className="card-img">
                     
                     <img
-                      src="https://www.freepnglogos.com/uploads/belts-png/casual-dress-belts-for-men-28.png"
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
                       alt=""
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body w-100 ">
                     
                     <div className="text-muted text-center mt-auto">
                       Available Colors
                     </div>
                     <div className="d-flex align-items-center justify-content-center colors my-2">
                       
-                      <div
-                        className="btn-group"
-                        data-toggle="buttons"
-                        data-tooltip="tooltip"
-                        data-placement="right"
-                        title="choose color"
-                      >
-                        
-                        <label className="btn btn-dark border form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-brown form-check-label active">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                      </div>
+                      <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center price">
-                      
-                      <div className="font-weight-bold">500 uah</div>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
+            <div className="col-lg-4 col-md-6 ">
               
               <Link to={routesMap?.DESCRIPTION?.path}>
                 <div className="card d-flex flex-column align-items-center">
                   
-                  <div className="product-name text-center">
-                    Footwear For Women
-                  </div>
+                  <div className="product-name">Torn Jeans for Men</div>
                   <div className="card-img">
                     
                     <img
-                      src="https://www.freepnglogos.com/uploads/women-shoes-png/download-women-shoes-png-image-png-image-pngimg-2.png"
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
                       alt=""
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body w-100 ">
                     
                     <div className="text-muted text-center mt-auto">
                       Available Colors
                     </div>
                     <div className="d-flex align-items-center justify-content-center colors my-2">
                       
-                      <div
-                        className="btn-group"
-                        data-toggle="buttons"
-                        data-tooltip="tooltip"
-                        data-placement="right"
-                        title="choose color"
-                      >
-                        
-                        <label className="btn btn-dark border form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-brown form-check-label active">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-pink form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-red form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                      </div>
+                      <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center price">
-                      
-                      <div className="font-weight-bold">1500 uah</div>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
+            <div className="col-lg-4 col-md-6 ">
               
               <Link to={routesMap?.DESCRIPTION?.path}>
                 <div className="card d-flex flex-column align-items-center">
                   
-                  <div className="product-name text-center">
-                    Nike Jogging shoes For Men
-                  </div>
+                  <div className="product-name">Torn Jeans for Men</div>
                   <div className="card-img">
                     
                     <img
-                      src="https://www.freepnglogos.com/uploads/shoes-png/find-your-perfect-running-shoes-26.png"
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
                       alt=""
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body w-100 ">
                     
                     <div className="text-muted text-center mt-auto">
                       Available Colors
                     </div>
                     <div className="d-flex align-items-center justify-content-center colors my-2">
                       
-                      <div
-                        className="btn-group"
-                        data-toggle="buttons"
-                        data-tooltip="tooltip"
-                        data-placement="right"
-                        title="choose color"
-                      >
-                        
-                        <label className="btn btn-dark border form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-pink form-check-label active">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-blue form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-orange form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                      </div>
+                      <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center price">
-                      
-                      <div className="font-weight-bold">1200 uah</div>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
+            <div className="col-lg-4 col-md-6 ">
               
               <Link to={routesMap?.DESCRIPTION?.path}>
                 <div className="card d-flex flex-column align-items-center">
                   
-                  <div className="product-name text-center">
-                    Leather Wallets For Men
-                  </div>
+                  <div className="product-name">Torn Jeans for Men</div>
                   <div className="card-img">
                     
                     <img
-                      src="https://www.freepnglogos.com/uploads/money-png/money-wallet-dollar-image-money-pictures-download-27.png"
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
                       alt=""
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body w-100 ">
                     
                     <div className="text-muted text-center mt-auto">
                       Available Colors
                     </div>
                     <div className="d-flex align-items-center justify-content-center colors my-2">
                       
-                      <div
-                        className="btn-group"
-                        data-toggle="buttons"
-                        data-tooltip="tooltip"
-                        data-placement="right"
-                        title="choose color"
-                      >
-                        
-                        <label className="btn btn-dark border form-check-label">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                        <label className="btn btn-brown form-check-label active">
-                          
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            autoComplete="off"
-                          />
-                        </label>
-                      </div>
+                      <p>Price <del style={{ color: "red" }}>2000</del> 1500</p>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center price">
-                      
-                      <div className="font-weight-bold">900 uah</div>
+                    <div className="d-flex align-items-center price adjest">
+                      <button className="btn  text-white">  Buy Now</button>
+                      <button className="btn btn1 text-white"> &nbsp;&nbsp;&nbsp;Detail&nbsp;&nbsp; </button>
                     </div>
                   </div>
                 </div>

@@ -63,10 +63,10 @@ export default function MyAccount() {
               </ul>
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 col-sm-12 ">
             <input
               type="submit"
-              className="profile-edit-btn"
+              className="profile-edit-btn text-white "
               name="btnAddMore"
               defaultValue="Edit Profile"
             />
@@ -202,7 +202,7 @@ export default function MyAccount() {
         </div>
       </form>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </>
 
 }
