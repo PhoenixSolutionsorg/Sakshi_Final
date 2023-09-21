@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Product(props) {
-  const {products,filter,setrFilter,setCartProduct} = props;
+  const {products,filter,setFilter,setCartProduct} = props;
+  const navigate = useNavigate();
   return <>
     <div className="product-area section">
       <div className="container">
@@ -24,7 +25,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#man"
                       role="tab"
-                      onClick={()=>alert('SDFdsf')}
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('man');
+                      }}
                     >
                       Man
                     </a>
@@ -35,6 +39,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#women"
                       role="tab"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('women')
+                      }}
                     >
                       Woman
                     </a>
@@ -45,6 +53,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#kids"
                       role="tab"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('kids')
+                      }}
                     >
                       Kids
                     </a>
@@ -55,6 +67,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#accessories"
                       role="tab"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('accessories')
+                      }}
                     >
                       Accessories
                     </a>
@@ -65,6 +81,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#essential"
                       role="tab"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('essential')
+                      }}
                     >
                       Essential
                     </a>
@@ -75,6 +95,10 @@ function Product(props) {
                       data-toggle="tab"
                       href="#prices"
                       role="tab"
+                      onClick={(e)=>{
+                        e.preventDefault();
+                        setFilter('prices')
+                      }}
                     >
                       Prices
                     </a>
@@ -184,15 +208,26 @@ function Product(props) {
                                   <i className=" ti-heart " />
                                   <span>Add to Wishlist</span>
                                 </a>
-                                <a title="Compare" href="#">
+                                <Link title="Compare"
+                                  onClick={(e)=>{
+                                    e.preventDefault();
+                                    setCartProduct();
+                                  }}
+                                >
                                   <i className="ti-shopping-cart" />
                                   <span>Add to Cart</span>
-                                </a>
+                                </Link>
                               </div>
                               <div className="product-action-2">
-                                <a title="Add to cart" href="#">
+                                <Link title="Add to cart"
+                                  onClick={(e)=>{
+                                    e.preventDefault();
+                                    setCartProduct('Buy now');
+                                    navigate('/description')
+                                  }}
+                                >
                                   Buy Now
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>

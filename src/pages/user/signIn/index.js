@@ -31,6 +31,7 @@ function SignIn() {
       const response = await AccountServices.userSignUp(formData);
       if (response?.success) {
         dispatch(setUserData(response?.data));
+        toast.success('Sign In success ...!');
         messageNotification({
           type: "success",
           message: response?.message

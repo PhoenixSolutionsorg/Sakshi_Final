@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import routesMap from "../../../routeControl/userRouteMap";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserData } from "../../../redux/user";
+import { toast } from "react-toastify";
 
 export default function TopBar() {
   const dispatch = useDispatch();
@@ -9,7 +10,7 @@ export default function TopBar() {
 
   const logOut = ()=>{
     dispatch(setUserData({}));
-    alert('Log Out Success')
+    toast('Log Out Success')
   }
 
   return <>
