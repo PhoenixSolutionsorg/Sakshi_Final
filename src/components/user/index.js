@@ -1,5 +1,5 @@
 export {default as Cart} from './cart/cart';
-export {default as countdown} from './coundown/coundown';
+export {default as Countdown} from './coundown/coundown';
 export {default as Contact} from './contact/contact';
 // export {default as deleteAfterComplete} from './deleteAfterComplete';
 export {default as footer} from './footer/footer';
@@ -22,3 +22,5 @@ export {default as UserHomePage} from './Home/Home';
 export {default as WithoutCategory} from './header/withoutCategory';
 export {default as Footer} from './footer/footer';
 export {default as Navbar} from './navbar/index';
+export {default as TopProducts} from './productList/productList'
+export {default as FileUpload} from './file-upload';

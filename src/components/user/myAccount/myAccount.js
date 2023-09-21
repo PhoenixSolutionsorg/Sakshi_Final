@@ -3,7 +3,7 @@ import Footer from "../footer/footer";
 import "./account.css";
 
 export default function MyAccount() {
-  const userData = useSelector((state)=>state?.user?.userData);
+  const userData = useSelector((state) => state?.user?.userData);
   return <>
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -28,7 +28,7 @@ export default function MyAccount() {
           </div>
           <div className="col-md-6">
             <div className="profile-head">
-              <h6>{`${userData?.first_name} ${userData?.last_name}` }</h6>
+              <h6>{`${userData?.first_name} ${userData?.last_name}`}</h6>
               {/* <h6>Web Developer and Designer</h6>
               <p className="proile-rating">
                 RANKINGS : <span>8/10</span>

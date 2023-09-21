@@ -203,7 +203,7 @@ export default function WithoutCategory({ categories }) {
                           <Link
                             onClick={(e) => {
                               e.preventDefault();
-                              Logout();
+                              logOut  ();
                             }}
                           >
                             Log Out

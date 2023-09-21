@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { Upload, message } from 'antd';
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
-import Common from '../../../apiEndPoints/common';
-// import Common from '../../apiEndPoints/Common';
+import Common from '../../apiEndPoints/common';
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
   reader?.addEventListener('load', () => callback(reader.result));
-  reader?.readAsDataURL(img);
+  reader.readAsDataURL(img);
 };
 
 const beforeUpload = (file) => {
@@ -21,9 +20,8 @@ const beforeUpload = (file) => {
   return isJpgOrPng && isLt2M;
 };
 
-const FileUpload = ({imageUrl,setImageUrl,updateProfile}) => {
+const FileUpload = ({imageUrl,setImageUrl,mediaType,mediaFor}) => {
   const [loading, setLoading] = useState(false);
-  
   const handleChange = (info) => {
     if (info.file.status === 'uploading') {
       setLoading(true);
@@ -33,7 +31,8 @@ const FileUpload = ({imageUrl,setImageUrl,updateProfile}) => {
       // Get this url from response in real world.
       getBase64(info.file.originFileObj, (url) => {
         setLoading(false);
-        setImageUrl(info.file.response.baseUrl);
+        setImageUrl(info.file.response?.data?.basePath);
+        console.log('http://localhost:5050/',info.file.response?.data?.basePath);
       });
     }
   };
@@ -56,14 +55,14 @@ const FileUpload = ({imageUrl,setImageUrl,updateProfile}) => {
         listType="picture-circle"
         className="avatar-uploader"
         showUploadList={false}
-        action={Common.media("patient","image")}
+        action={Common.media(mediaFor,mediaType)}
         beforeUpload={beforeUpload}
         onChange={handleChange}
       >
         {imageUrl ? (
           <img
             className='avatar-preview'
-            src={imageUrl}
+            src={`http://localhost:5050/${imageUrl}`}
             alt="avatar"
             style={{
               width: '100%',

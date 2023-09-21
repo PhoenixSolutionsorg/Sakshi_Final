@@ -1,22 +1,60 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { UserHomePage } from "../../../components";
-import { CategoryServices } from "../../../services";
+import { Countdown, Footer, HeroSlider, MiddleBanner, ProductArea, ShopBlog, ShopHome, ShopServices, SmallSlider, TopBar, TopProducts, WithoutCategory } from "../../../components";
+import { CategoryServices, ProductServices } from "../../../services";
 
 function Home(props) {
   const [categories, setCategories] = useState([]);
-  toast.success(props?.state?.data);
-  useEffect(async () => {
-    const response = await CategoryServices.getAllCategories();
-    if (response?.success) {
-      // setCategories(response?.data);
+  const [products,setProducts] = useState([]);
+  const [filter,setFilter] = useState('man');
+  const [cartProduct,setCartProduct] = useState({});
+
+  const getAllProducts = async ()=>{
+    try{
+      const response = await ProductServices.getAllProducts();
+      if(response?.success){
+        setProducts(response?.data);
+      }
+    }catch(error){
+      console.log(error);
     }
+  }
+  const getAllCategories = async ()=>{
+    try{
+      const response = await CategoryServices.getAllCategories();
+      if(response?.success){
+        setCategories(response?.data);
+        console.log('products ',response?.data);
+      }
+    }catch(error){
+      console.log(error);
+    }
+  }
+  useEffect(async () => {
+    getAllCategories();
+    getAllProducts();
   }, [])
   return (
     <>
-      <UserHomePage
-        categories={categories}
-      />
+      <TopBar />
+        <WithoutCategory
+            categories={categories}
+        />
+        <HeroSlider />
+        <SmallSlider />
+        <TopProducts
+          products={products}
+          filter={filter}
+          setFilter={setFilter}
+          setCartProduct={setCartProduct}
+        />
+        <MiddleBanner />
+        <ProductArea />
+        {/* <ShopHome /> */}
+        <Countdown />
+        <ShopBlog />
+        <ShopServices />
+        <Footer />
     </>
   );
 }
