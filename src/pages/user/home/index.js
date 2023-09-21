@@ -6,6 +6,9 @@ import { CategoryServices, ProductServices } from "../../../services";
 function Home(props) {
   const [categories, setCategories] = useState([]);
   const [products,setProducts] = useState([]);
+  const [filter,setFilter] = useState('man');
+  const [cartProduct,setCartProduct] = useState({});
+
   const getAllProducts = async ()=>{
     try{
       const response = await ProductServices.getAllProducts();
@@ -39,7 +42,12 @@ function Home(props) {
         />
         <HeroSlider />
         <SmallSlider />
-        <TopProducts/>
+        <TopProducts
+          products={products}
+          filter={filter}
+          setFilter={setFilter}
+          setCartProduct={setCartProduct}
+        />
         <MiddleBanner />
         <ProductArea />
         {/* <ShopHome /> */}

@@ -4,7 +4,7 @@ import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import Common from '../../apiEndPoints/common';
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
-  reader.addEventListener('load', () => callback(reader.result));
+  reader?.addEventListener('load', () => callback(reader.result));
   reader.readAsDataURL(img);
 };
 

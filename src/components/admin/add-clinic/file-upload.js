@@ -5,8 +5,8 @@ import Common from '../../../apiEndPoints/common';
 // import Common from '../../apiEndPoints/Common';
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
-  reader.addEventListener('load', () => callback(reader.result));
-  reader.readAsDataURL(img);
+  reader?.addEventListener('load', () => callback(reader.result));
+  reader?.readAsDataURL(img);
 };
 
 const beforeUpload = (file) => {
