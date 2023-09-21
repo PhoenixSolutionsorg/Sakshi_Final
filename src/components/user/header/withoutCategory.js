@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import routesMap from "../../../routeControl/userRouteMap";
 import { useDispatch, useSelector } from "react-redux";
-import { Logout } from "@mui/icons-material";
 import { setUserData } from "../../../redux/user";
+import { toast } from "react-toastify";
 
 export default function WithoutCategory({ categories }) {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state?.user?.userData);
   const logOut = ()=>{
     dispatch(setUserData({}));
+    toast.success('You Logged Out')
   }
 
   return <>
